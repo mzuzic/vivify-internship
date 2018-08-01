@@ -12,3 +12,5 @@
 */
 
 Route::get('/', 'HomeController@getView');
+
+Route::get('/hello/{name?}', 'HomeController@getHello');
