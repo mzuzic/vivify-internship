@@ -14,3 +14,9 @@
 Route::get('/', 'HomeController@getView');
 
 Route::get('/hello/{name?}', 'HomeController@getHello');
+
+Route::middleware('guest')->get('/login', 'HomeController@showLogin');
+
+Route::middleware('guest')->post('/loginn', 'Auth\LoginController@login');
+
+Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');

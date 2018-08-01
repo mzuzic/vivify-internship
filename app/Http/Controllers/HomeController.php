@@ -8,6 +8,7 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Support\Facades\View;
 
+
 class HomeController extends BaseController 
 {   
     public function getView() {
@@ -16,5 +17,9 @@ class HomeController extends BaseController
 
     public function getHello($name='') {
         return View::make('hello', ['name' => $name]);
+    }
+
+    public function showLogin() {
+        return view('login');
     }
 }

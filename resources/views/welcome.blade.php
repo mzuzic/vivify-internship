@@ -65,6 +65,10 @@
         </style>
     </head>
     <body>
+        @auth
+            {{{Auth::user()->name}}}
+            <a href="{{ url('/logout') }}"> logout </a>
+        @endauth
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
