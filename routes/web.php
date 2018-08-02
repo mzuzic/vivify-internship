@@ -19,4 +19,8 @@ Route::middleware('guest')->get('/login', 'HomeController@showLogin');
 
 Route::middleware('guest')->post('/loginn', 'Auth\LoginController@login');
 
-Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
+Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout'); 
+
+Route::get('/signup', 'HomeController@showSignUp');
+
+Route::post('/register', 'Auth\RegisterController@register');
