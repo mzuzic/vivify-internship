@@ -21,6 +21,6 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         
         <script> var a = 5;</script>
-        <script src="js/app.js"></script>
+        <script src="js/promise.js"></script>
     </body>
 </html>
