@@ -17,3 +17,12 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::post('/createTodo', 'TodoController@createTodo');
+
+Route::get('/getTodos', 'TodoController@getTodos');
+
+Route::delete('/deleteTodo/{id}', 'TodoController@deleteTodo');
+
+Route::put('/updateTodo', 'TodoController@updateTodo');
+
+Route::put('/markAsDone/{id}', 'TodoController@markAsDone');

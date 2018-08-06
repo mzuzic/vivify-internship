@@ -27,6 +27,11 @@ class DatabaseSeeder extends Seeder
             'country_id' => 1,
             'password' => \Hash::make('password')
         ]);
+
+        App\Todo::create([
+            'title' => 'Learn Vue.js',
+            'done' => false
+        ]);
         
         
     }
